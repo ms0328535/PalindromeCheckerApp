@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class StackStrategy implements PalindromeStrategy {
+public class StackStrategy {
 
     public boolean checkPalindrome(String text) {
 
@@ -8,11 +8,11 @@ public class StackStrategy implements PalindromeStrategy {
 
         Stack<Character> stack = new Stack<>();
 
-        for(int i=0;i<text.length();i++){
+        for(int i=0; i<text.length(); i++){
             stack.push(text.charAt(i));
         }
 
-        for(int i=0;i<text.length();i++){
+        for(int i=0; i<text.length(); i++){
             if(text.charAt(i) != stack.pop()){
                 return false;
             }

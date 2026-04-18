@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class DequeStrategy implements PalindromeStrategy {
+public class DequeStrategy {
 
     public boolean checkPalindrome(String text) {
 
